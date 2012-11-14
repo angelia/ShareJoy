@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" userLabel="HomeViewController" customClass="SJViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="cHp-6E-5W4">
+                                <items>
+                                    <navigationItem title="Share Joy" id="60W-JB-zWo"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRL-kc-fMD" userLabel="Button1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="fsE-50-vNV"/>
+                                    <constraint firstAttribute="width" constant="115" id="gz9-m6-tK0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn_camera.png" backgroundImage="btn_background.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3F-q9-yDh" userLabel="Button2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="KxO-1V-4cC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn_cameraroll.png" backgroundImage="btn_background.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSk-rr-kOa" userLabel="Button3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="WOo-RI-wt3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn_palette.png" backgroundImage="btn_background.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkl-MP-8NG" userLabel="Button4">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="instagram.png" backgroundImage="btn_background.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="buv-DT-jjZ" kind="modal" id="zdQ-ta-UnU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO0-y2-ihi" userLabel="Button5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="yoI-50-5CK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn_collage.png" backgroundImage="btn_background.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-dm-3JE" userLabel="Button6">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="icon_flickr.png" backgroundImage="btn_background.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchflickr:" destination="2" eventType="touchUpInside" id="epa-hB-VEO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="z3F-q9-yDh" firstAttribute="bottom" secondItem="aRL-kc-fMD" secondAttribute="bottom" type="default" id="1Qz-lf-jlf"/>
+                            <constraint firstItem="eo4-dm-3JE" firstAttribute="top" secondItem="RO0-y2-ihi" secondAttribute="top" type="default" id="6Eg-gc-aTX"/>
+                            <constraint firstItem="Wkl-MP-8NG" firstAttribute="trailing" secondItem="z3F-q9-yDh" secondAttribute="trailing" type="default" id="9Og-tm-yiR"/>
+                            <constraint firstItem="RO0-y2-ihi" firstAttribute="leading" secondItem="NSk-rr-kOa" secondAttribute="leading" type="default" id="BJX-xH-xMB"/>
+                            <constraint firstItem="eo4-dm-3JE" firstAttribute="trailing" secondItem="Wkl-MP-8NG" secondAttribute="trailing" type="default" id="EEC-c1-dvy"/>
+                            <constraint firstItem="cHp-6E-5W4" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="KbI-Yx-MbW"/>
+                            <constraint firstItem="NSk-rr-kOa" firstAttribute="leading" secondItem="aRL-kc-fMD" secondAttribute="leading" type="default" id="Lv5-bT-V8e"/>
+                            <constraint firstAttribute="bottom" secondItem="eo4-dm-3JE" secondAttribute="bottom" constant="25" id="OW4-5m-UGo"/>
+                            <constraint firstItem="cHp-6E-5W4" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Sx8-pa-AVM"/>
+                            <constraint firstItem="Wkl-MP-8NG" firstAttribute="leading" secondItem="z3F-q9-yDh" secondAttribute="leading" type="default" id="VbU-9s-GBm"/>
+                            <constraint firstAttribute="trailing" secondItem="z3F-q9-yDh" secondAttribute="trailing" constant="30" id="YKA-IT-08K"/>
+                            <constraint firstItem="NSk-rr-kOa" firstAttribute="trailing" secondItem="aRL-kc-fMD" secondAttribute="trailing" type="default" id="YVU-Tv-4pC"/>
+                            <constraint firstItem="eo4-dm-3JE" firstAttribute="bottom" secondItem="RO0-y2-ihi" secondAttribute="bottom" type="default" id="bFK-30-iix"/>
+                            <constraint firstItem="cHp-6E-5W4" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="fBN-q1-0ef"/>
+                            <constraint firstItem="RO0-y2-ihi" firstAttribute="trailing" secondItem="NSk-rr-kOa" secondAttribute="trailing" type="default" id="gk0-l1-dMg"/>
+                            <constraint firstItem="Wkl-MP-8NG" firstAttribute="top" secondItem="NSk-rr-kOa" secondAttribute="top" type="default" id="igD-9B-cqd"/>
+                            <constraint firstItem="NSk-rr-kOa" firstAttribute="top" secondItem="3" secondAttribute="top" constant="190" id="kbH-bw-Igd"/>
+                            <constraint firstItem="eo4-dm-3JE" firstAttribute="leading" secondItem="Wkl-MP-8NG" secondAttribute="leading" type="default" id="njI-LY-mnN"/>
+                            <constraint firstItem="aRL-kc-fMD" firstAttribute="top" secondItem="3" secondAttribute="top" constant="60" id="ogv-Ll-WaT"/>
+                            <constraint firstItem="Wkl-MP-8NG" firstAttribute="bottom" secondItem="NSk-rr-kOa" secondAttribute="bottom" type="default" id="p8q-mX-GVK"/>
+                            <constraint firstItem="NSk-rr-kOa" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="30" id="pxY-iT-MtJ"/>
+                            <constraint firstItem="z3F-q9-yDh" firstAttribute="top" secondItem="aRL-kc-fMD" secondAttribute="top" type="default" id="zTY-bP-Cgy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_camera" destination="aRL-kc-fMD" id="I1n-mD-oSW"/>
+                        <outlet property="btn_photoAlbums" destination="z3F-q9-yDh" id="v40-Dm-E1R"/>
+                        <outlet property="nav_MainVC" destination="60W-JB-zWo" id="hOh-ah-5rf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Cloud View Controller-->
+        <scene sceneID="bGE-Oh-ujJ">
+            <objects>
+                <viewController id="buv-DT-jjZ" customClass="SJCloudViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zzd-3b-gDR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqz-fb-3iL">
+                                <items>
+                                    <navigationItem title="Title" id="Fwn-TI-wNM"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iqz-fb-3iL" firstAttribute="top" secondItem="Zzd-3b-gDR" secondAttribute="top" type="default" id="4QT-jI-LN1"/>
+                            <constraint firstItem="Iqz-fb-3iL" firstAttribute="leading" secondItem="Zzd-3b-gDR" secondAttribute="leading" type="default" id="Hzp-Ob-Wdo"/>
+                            <constraint firstItem="Iqz-fb-3iL" firstAttribute="trailing" secondItem="Zzd-3b-gDR" secondAttribute="trailing" type="default" id="rZn-K8-2JF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="Iqz-fb-3iL" id="XYM-RP-F56"/>
+                        <outlet property="navItem" destination="Fwn-TI-wNM" id="5Al-3P-NMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWf-uc-98K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="-42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_background.png" width="142" height="142"/>
+        <image name="btn_camera.png" width="61" height="60"/>
+        <image name="btn_cameraroll.png" width="128" height="128"/>
+        <image name="btn_collage.png" width="119" height="119"/>
+        <image name="btn_palette.png" width="119" height="119"/>
+        <image name="icon_flickr.png" width="242" height="242"/>
+        <image name="instagram.png" width="133" height="135"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
